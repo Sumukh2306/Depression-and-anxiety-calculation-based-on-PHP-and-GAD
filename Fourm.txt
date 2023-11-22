@@ -1,0 +1,7 @@
+CREATE TABLE `discussion` (
+  `id` int(11) NOT NULL,
+  `parent_comment` varchar(500) NOT NULL,
+  `student` varchar(1000) NOT NULL,
+  `post` varchar(1000) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
