@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game Page</title>
+    <style>
+      /* Global styles */
+body {
+  background-image: url('game/game.jpg');
+  background-size: 100%;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Game container */
+#games-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px auto;
+  max-width: 1000px;
+}
+
+/* Game card */
+.game {
+  background-color: #e5f044;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 400px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Game title */
+.game h2 {
+  font-size: 24px;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  color: #555;
+}
+
+/* Game description */
+.game p {
+  font-size: 16px;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  color: #333;
+}
+
+/* Play button */
+.play-btn {
+  background-color: #6868d5;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px auto 0;
+  padding: 10px 20px;
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Play button hover */
+.play-btn:hover {
+  background-color: #3e8e41;
+}
+
+/* Play button focus */
+.play-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #888;
+}
+
+/* Game card hover */
+.game:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Game card titles on hover */
+.game:hover h2 {
+  color: #ffffff;
+}
+
+/* Game card descriptions on hover */
+.game:hover p {
+  color: #faf7f7;
+}
+
+/* Game card play button on hover */
+.game:hover .play-btn {
+  background-color: #6fed07;
+  color: #6868d5;
+}
+
+/* Game card play button on focus */
+.game .play-btn:focus {
+  box-shadow: 0 0 0 3px #6868d5;
+}
+
+/* Game card play button link */
+.game .play-btn a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Game card play button link on hover */
+.game .play-btn a:hover {
+  text-decoration: underline;
+}
+
+/* Game container width at 768px breakpoint */
+@media (max-width: 768px) {
+  #games-container {
+    max-width: 600px;
+  }
+}
+
+/* Game container width at 480px breakpoint */
+@media (max-width: 480px) {
+  #games-container {
+    max-width: 320px;
+  }
+
+  .game {
+    width: 280px;
+  }
+}
+
+    </style>
+    
+  </head>
+  <body>
+    <h1>Choose a Game to Play</h1>
+    <div id="games-container">
+      <!-- Game 1 -->
+      <div class="game">
+        <h2>Memory Game</h2>
+        <p>A fun game where you test your memory.</p>
+        <button class="play-btn"><a href="game/mindgame.html" target="_blank">Play Game </a></button>
+    </div>
+
+      <!-- Game 2 -->
+      <div class="game">
+        <h2>Sudoku</h2>
+        <p>Play with numbers.</p>
+        <button class="play-btn"><a href="sudokugame/sudoku.html" target="_blank">Play Game </a></button>
+      </div>
+
+      <!-- Game 3 -->
+      <div class="game">
+        <h2>2048</h2>
+        <p>An exciting number game can you reach 2048 try!!</p>
+        <button class="play-btn"><a href="2048/2048.html" target="_blank">Play Game </a></button>
+      </div>
+
+      <!-- Game 4 -->
+      <div class="game">
+        <h2>Mahjong</h2>
+        <p>Number game.</p>
+        <button class="play-btn"><a href="mahjong/maj.html" target="_blank">Play Game </a></button>
+      </div>
+    </div>
+  </body>
+</html>
