@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PHQ-9 Depression Assessment</title>
+    <link rel="stylesheet" type="text/css" href="CSS/phq.css">
+  </head>
+  <body>
+    <h1>PHQ-9 Depression Assessment </h1>
+    <form id="phq-9-form" method="post" action="calculate_score.php">
+      <fieldset>
+        <legend>How often have you been bothered by the following symptoms?</legend>
+        <div class="question">
+          <label for="q1">Little interest or pleasure in doing things</label>
+          <select id="q1" name="q1">
+            <option value="0">Not at all</option>
+            <option value="1">Several days</option>
+            <option value="2">More than half the days</option>
+            <option value="3">Nearly every day</option>
+          </select>
+        </div>
+        <div class="question">
+          <label for="q2">Feeling down, depressed, or hopeless</label>
+          <select id="q2" name="q2">
+            <option value="0">Not at all</option>
+            <option value="1">Several days</option>
+            <option value="2">More than half the days</option>
+            <option value="3">Nearly every day</option>
+          </select>
+        </div>
+        <div class="question">
+          <label for="q3">Trouble falling or staying asleep, or sleeping too much</label>
+          <select id="q3" name="q3">
+            <option value="0">Not at all</option>
+            <option value="1">Several days</option>
+            <option value="2">More than half the days</option>
+            <option value="3">Nearly every day</option>
+          </select>
+        </div>
+          <div class="question">
+            <label for="q4">Feeling tired or having little energy</label>
+            <select id="q4" name="q4">
+              <option value="0">Not at all</option>
+              <option value="1">Several days</option>
+              <option value="2">More than half the days</option>
+              <option value="3">Nearly every day</option>
+            </select>
+          </div>
+          <div class="question">
+            <label for="q5">Poor appetite or overeating</label>
+            <select id="q5" name="q5">
+              <option value="0">Not at all</option>
+              <option value="1">Several days</option>
+              <option value="2">More than half the days</option>
+              <option value="3">Nearly every day</option>
+            </select>
+          </div>
+          <div class="question">
+            <label for="q6">Feeling bad about yourself - or that you are a failure or have let yourself or your family down</label>
+            <select id="q6" name="q6">
+            <option value="0">Not at all</option>
+            <option value="1">Several days</option>
+            <option value="2">More than half the days</option>
+            <option value="3">Nearly every day</option>
+            </select>
+            </div>
+            <div class="question">
+            <label for="q7">Trouble concentrating on things, such as reading the newspaper or watching television</label>
+            <select id="q7" name="q7">
+            <option value="0">Not at all</option>
+            <option value="1">Several days</option>
+            <option value="2">More than half the days</option>
+            <option value="3">Nearly every day</option>
+            </select>
+            </div>
+            <div class="question">
+            <label for="q8">Moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual</label>
+            <select id="q8" name="q8">
+            <option value="0">Not at all</option>
+            <option value="1">Several days</option>
+            <option value="2">More than half the days</option>
+            <option value="3">Nearly every day</option>
+            </select>
+            </div>
+            <div class="question">
+            <label for="q9">Thoughts that you would be better off dead or of hurting yourself in some way</label>
+            <select id="q9" name="q9">
+            <option value="0">Not at all</option>
+            <option value="1">Several days</option>
+            <option value="2">More than half the days</option>
+            <option value="3">Nearly every day</option>
+            </select>
+            </div>
+            </fieldset>
+            <button type="submit" name="submit">Submit</button>
+            </form>
+            
+              </body>
+            </html>

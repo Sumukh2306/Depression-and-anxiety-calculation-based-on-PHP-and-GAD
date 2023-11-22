@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #phq-9-form {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  #phq-9-form fieldset {
+    border: 1px solid gray;
+    padding: 20px;
+  }
+  
+  #phq-9-form legend {
+    font-weight: bold;
+  }
+  
+  #phq-9-form .question {
+    margin-top: 20px;
+  }
+  
+  #phq-9-form label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  #phq-9-form select {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  #result {
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+  }

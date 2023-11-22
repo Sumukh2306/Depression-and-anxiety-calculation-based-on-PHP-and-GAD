@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: 20px;
+      text-align: center;
+      font-family: arial;
+      display: inline-block;
+    }
+
+    .title {
+      color: grey;
+      font-size: 18px;
+    }
+
+    button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 22px;
+      color: black;
+    }
+
+    button:hover, a:hover {
+      opacity: 0.7;
+    }
+    
+    /* Flexbox layout */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center">Doctor Info</h2>
+
+  <div class="card">
+    <img src="Images/image.jpg" alt="bs" style="width:60%">
+    <h1>Doctor 1</h1>
+    <p class="title">doctor1</p>
+    <p>Mangalore</p>
+    <div style="margin: 24px 0;">
+      <p>Mobile: <span class="phone">+91 7349431322</span></p>
+    </div>
+    <p><button onclick="openWhatsapp('+917349431322')">Contact</button></p>
+  </div>
+
+  <div class="card">
+    <img src="Images/image.jpg" alt="dn" style="width:60%">
+    <h1>Doctor 2</h1>
+    <p class="title">doctor2</p>
+    <p>Manipal</p>
+    <div style="margin: 24px 0;">
+      <p>Mobile: <span class="phone">+91 7026129038</span></p>
+    </div>
+    <p><button onclick="openWhatsapp('+917026129038')">Contact</button></p>
+  </div>
+
+  <div class="card">
+    <img src="Images/image.jpg" alt="vt" style="width:60%">
+    <h1>Doctor 3</h1>
+    <p class="title">doctor3</p>
+    <p>Japan</p>
+    <div style="margin: 24px 0;">
+      <p>Mobile: <span class="phone">+91 9538444510</span></p>
+    </div>
+    <p><button onclick="openWhatsapp('+919538444510')">Contact</button></p>
+  </div>
+  <div class="card">
+    <img src="Images/image.jpg" alt="sf" style="width:60%">
+    <h1>Doctor 4</h1>
+    <p class="title">doctor4</p>
+    <p>Udupi</p>
+    <div style="margin: 24px 0;">
+      <p>Mobile: <span class="phone">+91 7899218544</span></p>
+    </div>
+    <p><button onclick="openWhatsapp('+917899218544')">Contact</button></p>
+  </div>
+  <script>
+    function openWhatsapp(number) {
+        window.location.href = "whatsapp://send?phone=" + number;
+      }
+  </script>
+  <button onclick="window.history.back()">Go Back</button>
+</body>
+</html>
