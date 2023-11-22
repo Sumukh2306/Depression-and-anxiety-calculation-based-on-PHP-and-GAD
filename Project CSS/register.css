@@ -1,0 +1,74 @@
+/* CSS for form container */
+.form-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* CSS for form heading */
+.form-container h3 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+/* CSS for form message */
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #dc3545;
+  border-radius: 5px;
+}
+
+/* CSS for form fields */
+.box {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+/* CSS for select field */
+select.box {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+}
+
+/* CSS for submit button */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color:  #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* CSS for hover effect on submit button */
+.btn:hover {
+  background-color: #0062cc;
+}
